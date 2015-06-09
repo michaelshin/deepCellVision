@@ -60,7 +60,7 @@
     {% block footer %}
     <div class="container">
       <hr>
-      <p>&copy; Michael Shin 2015</p>
+      <p>&copy; Company 2014</p>
     </div>
     {% endblock footer %}
   </footer>
