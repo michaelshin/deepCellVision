@@ -15,6 +15,8 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^bad/$', bad),
-    url(r'', include('base.urls')),
+    url(r'', include('base.urls', namespace = 'base')),
+    url(r'^contact/', include('contact_me.urls', namespace = 'contact_me')),
+    url(r'^cellVision/', include('cellVision.urls', namespace = 'cellVision')),
 )
 

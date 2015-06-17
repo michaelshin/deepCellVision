@@ -51,8 +51,9 @@ INSTALLED_APPS = (
 
     # Application base, containing global templates.
     'base',
-
+    'cellVision',
     # Local apps, referenced via appname
+    'contact_me'
 )
 
 # Place bcrypt first in the list, so it will be the default password hashing

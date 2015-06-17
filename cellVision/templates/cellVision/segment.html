@@ -11,8 +11,8 @@ body {
 </style>
 {% endblock css %}
 
-{% block page_title %}Deep Cell Vision - Home{% endblock %}
-{% block page_class %}home-page{% endblock %}
+{% block page_title %}Deep Cell Vision - Segmentation{% endblock %}
+{% block page_class %}Segmentation{% endblock %}
 {% block content %}
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
 
@@ -47,34 +47,4 @@ body {
         </nav>    
       </div>
     </div>
-
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Deep Cell Vision</h1>
-        <p>This site was created to facilitate the classification and segmentation of yeast cells. This is done using state of the art machine learning algorithms.</p>
-        <p><a class="btn btn-primary btn-lg" href="{% url 'base:about' %}" role="button">Learn more »</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Classification</h2>
-          <p>Classify your cells given a microscopy image </p>
-          <p><a class="btn btn-default" href="{% url 'cellVision:classify' %}" role="button">Click to continue »</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Segmentation</h2>
-          <p>Segment your cells given a microscopy image</p>
-          <p><a class="btn btn-default" href="{% url 'cellVision:segment' %}" role="button">Click to continue »</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Contact</h2>
-          <p>Send us an email or learn more about our software by sending us an email.</p>
-          <p><a class="btn btn-default" href="{% url 'contact_me:contact' %}" role="button">View details »</a></p>
-        </div>
-      </div>
-    </div>
-
 {% endblock %}
