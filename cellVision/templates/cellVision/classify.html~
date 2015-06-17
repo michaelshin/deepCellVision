@@ -11,11 +11,10 @@ body {
 </style>
 {% endblock css %}
 
-{% block page_title %}Deep Cell Vision - Home{% endblock %}
-{% block page_class %}home-page{% endblock %}
+{% block page_title %}Deep Cell Vision - Classify{% endblock %}
+{% block page_class %}classify{% endblock %}
 {% block content %}
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
-<div class="container">
-<h1>About this project:</h1>
-</div>
+
+<h1>CLASSIFY</h1>
 {% endblock %}

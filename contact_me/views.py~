@@ -19,7 +19,8 @@ def contact_page(request):
             if cc_myself:
                 recipients.append(sender)
             try:
-                send_mail(subject, message, sender, recipients)
+				raise BadHeaderError(2)
+                #send_mail(subject, message, sender, recipients)
             except BadHeaderError:
                 return HttpResponseRedirect('invalid/')
             return HttpResponseRedirect('thanks/')

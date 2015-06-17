@@ -3,11 +3,13 @@ Welcome to deepCellVision's documentation!
 ========================================
 
 This is a documentation template for Deep Cell Vision using Django 1.8.1.
+Feel free to change this to your liking.
+
 
 About
 -------------
 
-This project uses `Django <http://www.djangoproject.com/>`
+This project uses `Django <http://www.djangoproject.com/>`_.
 
 Contents
 --------
