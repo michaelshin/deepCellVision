@@ -34,4 +34,4 @@ django-debug-toolbar
 #django-waffle
 
 #Imaging Library
-PIL
+Pillow

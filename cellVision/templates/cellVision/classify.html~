@@ -8,6 +8,10 @@ body {
   padding-top: 50px;
   padding-bottom: 20px;
 }
+li {
+    list-style-type: none;
+    font-weight: normal;
+}
 </style>
 {% endblock css %}
 
@@ -16,5 +20,8 @@ body {
 {% block content %}
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
 
-<h1>CLASSIFY</h1>
+<div class="container">
+  <h1>CLASSIFY YEAST CELLS</h1>
+</div>
 {% endblock %}
+

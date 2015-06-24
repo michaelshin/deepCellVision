@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "cellVision.html" %}
 
 {% block css %}
 {{block.super}}
@@ -7,6 +7,10 @@
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+li {
+    list-style-type: none;
+    font-weight: normal;
 }
 </style>
 {% endblock css %}
@@ -17,6 +21,7 @@ body {
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
 
 <div class="container">
-<h1>CLASSIFY YEAST CELLS</h1>
+  <h1>CLASSIFY YEAST CELLS</h1>
 </div>
 {% endblock %}
+

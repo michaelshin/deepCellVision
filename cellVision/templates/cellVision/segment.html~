@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "cellVision.html" %}
 
 {% block css %}
 {{block.super}}
@@ -15,5 +15,7 @@ body {
 {% block page_class %}segment{% endblock %}
 {% block content %}
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
-<h1>segment</h1>
+<div class="container">
+<h1>SEGMENT YEAST CELLS</h1>
+</div>
 {% endblock %}
