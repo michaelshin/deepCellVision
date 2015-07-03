@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http  import HttpResponse, HttpResponse
 from .forms import CellVisionForm
+from . import image_handler
 # Create your views here.
 
 def classify(request):
@@ -17,4 +18,14 @@ def classify(request):
     return render(request, 'cellVision/classify.html', {'form': form})
 
 def segment(request):
-    return render(request, "cellVision/segment.html")
+    if request.method == 'POST':
+        form = CellVisionForm(request.POST, request.FILES)
+        if form.is_valid():
+            image_handler.show_segment(request.FILES['image'])
+            choices = form.cleaned_data['options']
+            print type(image)
+            return HttpResponse('image upload success')
+    else:
+        form = CellVisionForm()
+	context_data = {'form': form}
+    return render(request, "cellVision/segment.html", {'form': form})

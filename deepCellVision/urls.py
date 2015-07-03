@@ -2,8 +2,8 @@
 
 from django.conf.urls import include, patterns, url
 from django.contrib import admin
-admin.autodiscover()
-
+from django.conf.urls.static import static
+from django.conf import settings
 
 def bad(request):
     """ Simulates a server error """
@@ -18,5 +18,5 @@ urlpatterns = patterns('',
     url(r'', include('base.urls', namespace = 'base')),
     url(r'^contact/', include('contact_me.urls', namespace = 'contact_me')),
     url(r'^cellVision/', include('cellVision.urls', namespace = 'cellVision')),
-)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
