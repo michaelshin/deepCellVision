@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http  import HttpResponse, HttpResponse
 from .forms import CellVisionForm
-from . import image_handler
+from . image_handler import show_segment
 from .models import CellImage
 # Create your views here.
 
@@ -21,11 +21,11 @@ def segment(request):
     if request.method == 'POST':
         form = CellVisionForm(request.POST, request.FILES)
         if form.is_valid():
-            image = CellImage(image = request.FILES['image'])
-            image.save()
-            path = image.image.path #absolute path of image
-            url = image.image.url #relative path of image
-            image_handler.show_segment(request.FILES['image'])
+            upload = CellImage(image = request.FILES['image'])
+            upload.save()
+            path = upload.image.path #absolute path of image
+            url = upload.image.url #relative path of image
+            show_segment(path)
             choices = form.cleaned_data['options'] #choices in list form
             return HttpResponse('image upload success')
     else:

@@ -5,5 +5,4 @@ from django.db import models
 class CellImage(models.Model):
 #    options = 
     image = models.ImageField(upload_to = 'cell_image/%Y/%m/%d')
-    directory = 'cell_image/%Y/%m/%d'
 

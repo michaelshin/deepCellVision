@@ -1,6 +1,22 @@
-import numpy as np
-import mahotas as mh
-import matplotlib.pyplot as plt
+def _segment(cell):
+    # takes a numpy array of a microscopy
+    # segments it based on filtering the image then applying a distance transform and
+    # a watershed method to get the proper segmentation
+    import numpy as np
+    import mahotas as mh
+    filt_cell = mh.gaussian_filter(cell, 2)
+    T = mh.thresholding.otsu((np.rint(filt_cell).astype('uint8')))
+    dist = mh.stretch(mh.distance(filt_cell > T))
+    
+    Bc = np.ones((3,3))
+    rmax = mh.regmin((dist))
+    rmax = np.invert(rmax)
+    labels, num_cells = mh.label(rmax, Bc)
+    surface = (dist.max() - dist)
+    areas = mh.cwatershed(dist, labels)
+    areas *= T
+    return areas
+
 num_frames = 4
 num_chan = 2
 max_w = 1300
@@ -30,29 +46,4 @@ def getImageData(inputImagePath):
                                                        mid[1] - max_w/2: mid[1] + max_w/2] 
     return data_out
 
-def segment(cell):
-    # takes a numpy array of a microscopy
-    # segments it based on filtering the image then applying a distance transform and
-    # a watershed method to get the proper segmentation
-    import numpy as np
-    import mahotas as mh
-    filt_cell = mh.gaussian_filter(cell, 2)
-    T = mh.thresholding.otsu((np.rint(filt_cell).astype('uint8')))
-    dist = mh.stretch(mh.distance(filt_cell > T))
-    
-    Bc = np.ones((3,3))
-    rmax = mh.regmin((dist))
-    rmax = np.invert(rmax)
-    labels, num_cells = mh.label(rmax, Bc)
-    surface = (dist.max() - dist)
-    areas = mh.cwatershed(dist, labels)
-    areas *= T
-    return areas
 
-if __name__ == '__main__':
-    import random
-    f = open("path_to_image.txt").read().splitlines()
-    curImagePath = random.choice(f)
-    curImages = getImageData(curImagePath)
-    plt.imshow(segment(curImages[0][0]))
-    plt.show()
