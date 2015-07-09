@@ -46,16 +46,4 @@ def getImageData(inputImagePath):
                                                        mid[1] - max_w/2: mid[1] + max_w/2] 
     return data_out
 
-def normalize_by_constant_values(inputData,means,stds):
-    # normalize data for NN
-    if inputData.shape[1:] == means.shape:
-        #normalize by whole images
-        inputData = (inputData - means) / stds
-        raise NameError('bad image configuration - should be tensor')
-    else:
-        #normalize by single values per channel
-        for channel in range(len(means)):
-            inputData[:,channel,:,:] = (inputData[:,channel,:,:] - means[channel]) / stds[channel]
-    return inputData
-
 

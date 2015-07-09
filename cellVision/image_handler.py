@@ -70,3 +70,22 @@ def show_segment(path, name):
     np.save(loc, arr) #save the array to give as a raw file
     return
 
+'''def classify(path):
+    curImages = getImageData(curImagePath)
+    curImages = normalize_by_constant_values(curImages,norm_vals['means'],norm_vals['stdevs'])
+    break
+    pred = model.get_test_time_crops({'X0':gnp.garray(curImages)})
+    prediction_dict[orf]=np.mean(pred,axis=0)
+    nn.ForwardProp({'X0':gnp.garray(curImages)})
+    plt.figure(figsize=(12,12))
+    for i in range(len(localizationTerms)):
+        plt.subplot(4,5,i+1)
+        plt.imshow(nn._layers['MIL_pool'].Z[image][i].as_numpy_array(),'gray',vmax=1,vmin=0,interpolation='none')
+        plt.axis('off')
+        plt.title(localizationTerms[i])
+    plt.tight_layout()
+
+    pred_maps = nn._layers['MIL_pool'].Z[image].as_numpy_array()
+    area = pred_maps.sum(1).sum(1) / pred_maps.sum()
+    area2 = pred_maps.sum(1).sum(1) / (pred_maps.shape[1]*pred_maps.shape[2])
+'''

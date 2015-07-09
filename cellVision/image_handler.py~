@@ -68,5 +68,5 @@ def show_segment(path, name):
     loc = str(settings.MEDIA_ROOT + '/segment/' + name.split('.')[0])
     save(loc)
     np.save(loc, arr) #save the array to give as a raw file
-    return 'segment/'
+    return
 

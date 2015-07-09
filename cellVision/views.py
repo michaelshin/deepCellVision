@@ -7,7 +7,7 @@ from django.conf import settings
 from .forms import CellVisionForm
 import image_handler
 from .models import CellImage
-
+import json
 # Create your views here.
 
 def classify(request):
@@ -20,7 +20,12 @@ def classify(request):
             name = upload.image.name #name of the image
             url = upload.image.url
             choices = form.cleaned_data['options'] #choices in list form
-            return render(request, 'cellVision/classify_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name, 'url': url})
+            f = [['Class', 'Area'],
+                ]
+            for choice in choices:
+                area = 1 #change this to get the proper area
+                f.append([str(choice), area])
+            return render(request, 'cellVision/classify_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name, 'url': url, 'activations': json.dumps(f)})
     else:
         form = CellVisionForm()
 	context_data = {'form': form}
