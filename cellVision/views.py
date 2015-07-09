@@ -1,8 +1,13 @@
 from django.shortcuts import render
-from django.http  import HttpResponse, HttpResponse
+from django.http  import HttpResponse, HttpResponseRedirect
+from django.core.urlresolvers import reverse
+from django.core.files import File 
+from django.conf import settings
+
 from .forms import CellVisionForm
-from . image_handler import show_segment
+from .image_handler import show_segment
 from .models import CellImage
+
 # Create your views here.
 
 def classify(request):
@@ -24,11 +29,19 @@ def segment(request):
             upload = CellImage(image = request.FILES['image'])
             upload.save()
             path = upload.image.path #absolute path of image
-            url = upload.image.url #relative path of image
-            show_segment(path)
+            name = request.FILES['image'].name.split('.')[0] #name of the image
+            segmented = show_segment(path, name)
             choices = form.cleaned_data['options'] #choices in list form
-            return HttpResponse('image upload success')
+            return render(request, 'cellVision/segment_result.html', {'media_url': settings.MEDIA_URL, 'segmented': segmented, 'file_name': name})
     else:
         form = CellVisionForm()
 	context_data = {'form': form}
     return render(request, "cellVision/segment.html", {'form': form})
+
+def download(request):
+    file_location = "/home/michael/deepCellVision/media/segment/2015/07/08/001003000.npy"
+    array = File(open(file_location))
+    response = HttpResponse(array, content_type='application/octet-stream')
+    response['Content-Disposition'] = 'attachment; filename="array.npy"'
+    return response
+

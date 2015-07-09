@@ -1,0 +1,11 @@
+from django.db import models
+
+# Create your models here.
+
+class CellImage(models.Model):
+#    options = 
+    image = models.ImageField(upload_to = 'cell_image/%Y/%m/%d')
+
+class SegmentArray(models.Model):
+    arr = models.FileField(upload_to = 'array/%Y/%m/%d')
+
