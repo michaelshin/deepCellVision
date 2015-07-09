@@ -21,8 +21,8 @@ li {
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
 <div class="container">
 <h1>Here is your image.</h1>
-<img src = "{{ media_url }}{{ segmented }}{{ file_name }}.png" />
+<img src = "{{ media_url }}segment/{{ file_name }}.png" />
 {{ zarray.url }}
-<p><a href = "/media">Download the raw file</a></p>
+<p><a href = "media/{{ file_name }}.npy">Download the raw file</a></p>
 </div>
 {% endblock %}

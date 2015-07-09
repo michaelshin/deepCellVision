@@ -61,14 +61,12 @@ def show_segment(path, name):
     from . import _segmentation
     from django.conf import settings
     import numpy as np
-    import time
     img = Image.open(path).convert('L')
     arr = np.asarray(img, np.uint8)
     arr = _segmentation._segment(arr)
     plt.imshow(arr)
-    loc = str(settings.MEDIA_ROOT + time.strftime('/segment/%Y/%m/%d/') + name)
-    np.save(loc, arr) #save the array to give as a raw file
+    loc = str(settings.MEDIA_ROOT + '/segment/' + name.split('.')[0])
     save(loc)
-    f = open(loc + ".npy")
-    return time.strftime('segment/%Y/%m/%d/')
+    np.save(loc, arr) #save the array to give as a raw file
+    return
 

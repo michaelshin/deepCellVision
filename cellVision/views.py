@@ -5,7 +5,7 @@ from django.core.files import File
 from django.conf import settings
 
 from .forms import CellVisionForm
-from .image_handler import show_segment
+import image_handler
 from .models import CellImage
 
 # Create your views here.
@@ -14,9 +14,13 @@ def classify(request):
     if request.method == 'POST':
         form = CellVisionForm(request.POST, request.FILES)
         if form.is_valid():
-            image = form.cleaned_data['image']
-            choices = form.cleaned_data['options']
-            return HttpResponse('image upload success')
+            upload = CellImage(image = request.FILES['image'])
+            upload.save()
+            path = upload.image.path #absolute path of image
+            name = upload.image.name #name of the image
+            url = upload.image.url
+            choices = form.cleaned_data['options'] #choices in list form
+            return render(request, 'cellVision/classify_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name, 'url': url})
     else:
         form = CellVisionForm()
 	context_data = {'form': form}
@@ -29,19 +33,20 @@ def segment(request):
             upload = CellImage(image = request.FILES['image'])
             upload.save()
             path = upload.image.path #absolute path of image
-            name = request.FILES['image'].name.split('.')[0] #name of the image
-            segmented = show_segment(path, name)
+            name = upload.image.name #name of the image
+            image_handler.show_segment(path, name)
             choices = form.cleaned_data['options'] #choices in list form
-            return render(request, 'cellVision/segment_result.html', {'media_url': settings.MEDIA_URL, 'segmented': segmented, 'file_name': name})
+            return render(request, 'cellVision/segment_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name.split('.')[0]})
     else:
         form = CellVisionForm()
-	context_data = {'form': form}
     return render(request, "cellVision/segment.html", {'form': form})
 
-def download(request):
-    file_location = "/home/michael/deepCellVision/media/segment/2015/07/08/001003000.npy"
+def download(request, file_name):
+    file_location = str(settings.MEDIA_ROOT + "/segment/" + file_name)
     array = File(open(file_location))
-    response = HttpResponse(array, content_type='application/octet-stream')
-    response['Content-Disposition'] = 'attachment; filename="array.npy"'
+    from mimetypes import guess_type
+    mime_type, encoding = guess_type(file_name)
+    response = HttpResponse(array, content_type=mime_type)
+    response['Content-Disposition'] = 'attachment; filename="%s"' %file_name
     return response
 
