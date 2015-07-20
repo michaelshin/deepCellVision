@@ -1,6 +1,8 @@
 import matplotlib
 matplotlib.use('Agg')
 from matplotlib import pyplot as plt
+import numpy as np
+from django.conf import settings
 
 def save(path, ext='png', close=True, verbose=False):
     import os
@@ -56,17 +58,39 @@ def save(path, ext='png', close=True, verbose=False):
         print("Done")
     return savepath
 
+def _segment(cell):
+    # takes a numpy array of a microscopy
+    # segments it based on filtering the image then applying a distance transform and
+    # a watershed method to get the proper segmentation
+
+    import mahotas as mh
+    filt_cell = mh.gaussian_filter(cell, 2)
+    T = mh.thresholding.otsu((np.rint(filt_cell).astype('uint8')))
+    dist = mh.stretch(mh.distance(filt_cell > T))
+    
+    Bc = np.ones((3,3))
+    rmax = mh.regmin((dist))
+    rmax = np.invert(rmax)
+    labels, num_cells = mh.label(rmax, Bc)
+    surface = (dist.max() - dist)
+    areas = mh.cwatershed(dist, labels)
+    areas *= T
+    return areas
+
 def show_segment(path, name):
     from PIL import Image
-    from . import _segmentation
-    from django.conf import settings
-    import numpy as np
-    img = Image.open(path).convert('L')
+    img = Image.open(path)
+    img.seek(9)
     arr = np.asarray(img, np.uint8)
-    arr = _segmentation._segment(arr)
+    arr = _segment(arr)
     plt.imshow(arr)
     loc = str(settings.MEDIA_ROOT + '/segment/' + name.split('.')[0])
     save(loc)
     np.save(loc, arr) #save the array to give as a raw file
     return
 
+def seg_save(arr, name):
+    for i in range(17):
+        plt.imshow(arr[0,i,1])
+        loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+'1')
+        save(loc)

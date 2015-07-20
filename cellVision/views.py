@@ -8,6 +8,7 @@ from .forms import CellVisionForm
 import image_handler
 from .models import CellImage
 import json
+from . import classification
 # Create your views here.
 
 def classify(request):
@@ -19,12 +20,14 @@ def classify(request):
             path = upload.image.path #absolute path of image
             name = upload.image.name #name of the image
             url = upload.image.url
+            results = classification._classify(path)
             choices = form.cleaned_data['options'] #choices in list form
             f = [['Class', 'Area'],
                 ]
             for choice in choices:
-                area = 1 #change this to get the proper area
-                f.append([str(choice), area])
+                f.append([str(choice), results[0][choice]])
+            classifications = classification.getJacobian_per_class(results[1],results[2])
+            image_handler.seg_save(classifications, name)
             return render(request, 'cellVision/classify_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name, 'url': url, 'activations': json.dumps(f)})
     else:
         form = CellVisionForm()
