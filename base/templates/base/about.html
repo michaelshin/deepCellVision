@@ -17,10 +17,30 @@ body {
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
 <div class="container">
 <h1>About this project:</h1>
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel rhoncus nibh. Vivamus feugiat odio urna, a maximus neque efficitur vitae. Cras finibus vehicula justo, eu fringilla enim sollicitudin in. Curabitur leo neque, lobortis nec massa non, pharetra ultricies massa. Vestibulum urna mi, pulvinar a velit eget, varius sollicitudin nibh. Donec sed nunc imperdiet, tincidunt arcu sed, commodo mi. Vivamus augue dui, mattis vitae aliquet at, vulputate eget elit. Integer mollis lorem lorem, eu egestas diam scelerisque non. Nullam ac porta purus, vel bibendum nunc. Nam eget ex id felis lobortis bibendum. Ut sagittis egestas sem eu pharetra. Suspendisse odio magna, faucibus quis justo id, aliquam lobortis risus. Curabitur pellentesque eleifend porttitor. Integer sollicitudin, tortor at egestas iaculis, lacus erat laoreet ante, sit amet lacinia quam nisi a nisl. Mauris placerat dui quis nisl tristique posuere.</p>
-<p> Duis tempus nulla lectus, non pulvinar sapien iaculis in. Donec bibendum dignissim volutpat. Quisque lobortis eros sed diam posuere commodo sit amet vitae est. Praesent lacinia leo id auctor rhoncus. Cras eu dictum sem, eu imperdiet urna. Nulla id risus odio. Nunc a suscipit tortor. Vestibulum ut erat ac ante finibus dignissim. Sed iaculis ante sed justo lacinia consequat. In hac habitasse platea dictumst. In quis fringilla diam, eu egestas tortor. Etiam sed velit sem. Curabitur feugiat odio imperdiet nulla condimentum malesuada. Curabitur eu maximus tellus. Quisque elementum risus id efficitur euismod. Maecenas ac lacinia felis.</p>
-<p>Nullam a ipsum eu mauris fermentum faucibus at eu augue. Nullam iaculis mi in velit posuere posuere. Sed nec rutrum elit. Donec euismod malesuada velit, non commodo magna. Pellentesque accumsan dignissim lorem quis dictum. Curabitur semper rutrum velit, sodales consequat magna blandit in. Phasellus sodales mauris diam, vitae lacinia erat pretium at. Sed ultricies dolor et porttitor tincidunt. Nam a nibh lorem. Duis pulvinar mollis vestibulum.</p>
-<p>Nunc risus massa, tincidunt ut commodo varius, ultrices ut sem. Nam mollis mi eget arcu feugiat faucibus. Duis vel condimentum sapien, nec venenatis elit. Fusce iaculis leo pulvinar enim sodales finibus. Sed porttitor commodo mauris, sed lobortis sem consequat in. Integer tortor ipsum, sodales et ante eget, pharetra viverra ligula. Sed ultrices dapibus ante, in molestie augue suscipit eget. Duis pharetra feugiat facilisis. In eget ex laoreet ex imperdiet consectetur. Etiam tempus sit amet arcu in porta. Fusce libero nibh, dictum sit amet finibus ac, posuere id ex.</p>
+<p> This web tool was designed to accept a raw microscopy image as input and returns the predicted protein localization for the whole image as well as a segmentation mask for the cells in the image and an estimate of protein localization for each cell. It lets users to select segmented cells or localization categories to view more detailed attributes specific to the selection. This tool is unique as there currently are other online tools that use modern computer vision algorithms to classify and segment microscopy screens.</p>
+
+<h2>Developed at the University of Toronto by</h2>
+        <ul>
+            <li>Oren Kraus</li>
+            <li>Lei Jimmy Ba</li>
+            <li>Brendan Frey</li>
+            <li>Matej Ušaj</li>
+            <li>Michael Shin</li>
+        </ul>
+        
+        <h4>with help of</h4>
+        <ul>
+            <li>Charlie Boone</li>
+            <li>Brenda Andrews</li>
+        </ul>
+        
+        <h2>Thanks to the following libraries and their developers</h2>
+        <ul>
+            <li><a href="https://www.djangoproject.com/">Django</a></li>
+            <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+            <li><a href="http://mahotas.readthedocs.org/en/latest/">Mahotas</a></li>
+            <li><a href="http://www.cs.toronto.edu/~tijmen/gnumpy.html">gnumpy</a></li>
+        </ul>
 
 </div>
 {% endblock %}

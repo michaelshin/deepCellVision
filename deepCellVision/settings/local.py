@@ -24,7 +24,7 @@ DATABASES = {
         #    'charset' : 'utf8',
         #    'use_unicode' : True,
         #},
-        #'TEST_CHARSET': 'utf8',
+        #'TEST_CHARSET': 'utf8',settings
         #'TEST_COLLATION': 'utf8_general_ci',
     },
     # 'slave': {
@@ -57,7 +57,7 @@ DEV = True
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["deepCellvision.com"]
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # Hardcoded values can leak through source control. Consider loading

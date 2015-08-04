@@ -11,6 +11,7 @@ import json
 from . import classification
 # Create your views here.
 
+
 def classify(request):
     if request.method == 'POST':
         form = CellVisionForm(request.POST, request.FILES)
@@ -20,14 +21,14 @@ def classify(request):
             path = upload.image.path #absolute path of image
             name = upload.image.name #name of the image
             url = upload.image.url
-            results = classification._classify(path)
+            frames = form.cleaned_data['frames']
+            channels = form.cleaned_data['channels']
+            target = form.cleaned_data['target']
+            areas = classification._classify(path, name, frames, channels, target)
             choices = form.cleaned_data['options'] #choices in list form
-            f = [['Class', 'Area'],
-                ]
+            f = [['Class', 'Area']]
             for choice in choices:
-                f.append([str(choice), results[0][choice]])
-            classifications = classification.getJacobian_per_class(results[1],results[2])
-            image_handler.seg_save(classifications, name)
+                f.append([str(choice), areas[choice]])
             return render(request, 'cellVision/classify_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name, 'url': url, 'activations': json.dumps(f)})
     else:
         form = CellVisionForm()

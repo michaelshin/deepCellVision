@@ -92,5 +92,5 @@ def show_segment(path, name):
 def seg_save(arr, name):
     for i in range(17):
         plt.imshow(arr[0,i,1])
-        loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+'1')
+        loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+str(i))
         save(loc)
