@@ -14,9 +14,23 @@ li {
 }
 </style>
 <script type="text/javascript">
+    function toggle(source) {
+      var checkboxes = document.getElementsByName('options');
+      for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = source.checked;
+      }
+    };
+    
+  
     function setUpSample(){
     // fill out form    
-    alert('hello');
+     var checkboxes = document.getElementsByName('options');
+      for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = true;
+      }
+      document.getElementById("id_frames").setAttribute("value", 4);
+      document.getElementById("id_channels").setAttribute("value", 4);
+      document.getElementById("id_target").setAttribute("value", 2);
     };
 </script>
 {% endblock css %}

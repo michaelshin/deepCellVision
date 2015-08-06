@@ -132,6 +132,9 @@
       <div class="fieldWrapper">
         {{ field.label_tag }}
         {{ field.help_text }}
+        {% if field.label == "Options" %}
+	<p><input onClick="toggle(this)" type="checkbox"  /> Select All</p>
+	{% endif %}
         <p>{{ field }}</p>
         {{ field.errors }}
       </div>
