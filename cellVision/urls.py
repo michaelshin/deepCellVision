@@ -5,5 +5,8 @@ from . import views
 urlpatterns = [
    url(r'classify/$', views.classify, name='classify'),
    url(r'segment/$', views.segment, name='segment'),
-   url(r'media/(?P<file_name>.*)$', views.download),
+   url(r'media/(?P<file_name>\d+)/$', views.download),
+   url(r'results/(?P<file_name>\d+)/(?P<localization>[A-Z]+)/$', views.segment_images, name ='segment_images'), 
+   url(r'results/(?P<file_name>\d+)/$', views.results, name ='results'),
+   url(r'sample/$', views.sample),
 ]

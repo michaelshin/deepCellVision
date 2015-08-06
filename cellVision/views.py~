@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.http  import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, get_object_or_404
+from django.http  import HttpResponse, HttpResponseRedirect, Http404
 from django.core.urlresolvers import reverse
 from django.core.files import File 
 from django.conf import settings
@@ -11,25 +11,24 @@ import json
 from . import classification
 # Create your views here.
 
-
 def classify(request):
     if request.method == 'POST':
         form = CellVisionForm(request.POST, request.FILES)
         if form.is_valid():
-            upload = CellImage(image = request.FILES['image'])
+            upload = CellImage(image = request.FILES['image'], channels = form.cleaned_data['channels'], frames = form.cleaned_data['frames'], target = form.cleaned_data['target'])
             upload.save()
             path = upload.image.path #absolute path of image
             name = upload.image.name #name of the image
             url = upload.image.url
-            frames = form.cleaned_data['frames']
-            channels = form.cleaned_data['channels']
-            target = form.cleaned_data['target']
-            areas = classification._classify(path, name, frames, channels, target)
             choices = form.cleaned_data['options'] #choices in list form
+            areas = classification._classify(path, name, upload.frames, upload.channels, upload.target, choices)
             f = [['Class', 'Area']]
             for choice in choices:
                 f.append([str(choice), areas[choice]])
-            return render(request, 'cellVision/classify_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name, 'url': url, 'activations': json.dumps(f)})
+            upload.activations = f
+            upload.name = name.split('.')[0]
+            upload.save()
+            return HttpResponseRedirect(reverse("cellVision:results", args=(upload.name,)))
     else:
         form = CellVisionForm()
 	context_data = {'form': form}
@@ -59,3 +58,25 @@ def download(request, file_name):
     response['Content-Disposition'] = 'attachment; filename="%s"' %file_name
     return response
 
+def results(request, file_name):
+    p = get_object_or_404(CellImage, name=file_name)
+    return render(request, "cellVision/classify_result.html", {'activations': json.dumps(p.activations), 'url': str(reverse("cellVision:results", args=(p.name,))) })
+
+def segment_images(request, file_name, localization):
+    p = get_object_or_404(CellImage, name=file_name)
+    for i in range(len(p.activations)):
+        if localization in p.activations[i]:
+            break
+        if i+1 == len(p.activations):
+            raise Http404
+    url = settings.MEDIA_URL + '/classes/' + p.name+"_"+localization
+    return render(request, "cellVision/classify_segment.html", {"localization": localization, "url": url})
+
+def sample(request):
+    file_location = str(settings.MEDIA_ROOT + "/sample/file.txt" )
+    array = File(open(file_location))
+    from mimetypes import guess_type
+    mime_type, encoding = guess_type("file.txt")
+    response = HttpResponse(array, content_type=mime_type)
+    response['Content-Disposition'] = 'attachment; filename="file.txt"
+    return response

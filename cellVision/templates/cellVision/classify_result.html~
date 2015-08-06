@@ -33,10 +33,9 @@ li {
         // Set chart options
         var options = {'title':'Percentage Activated per Class',
                        'width':'100%',
-                       'height':'1000',
+                       'height':'800',
                         explorer: {
                                 maxZoomIn: 0.25,
-                                maxZoomOut: 4,
                                 keepInBounds: false,
                                 axis: 'vertical',
                                 zoomDelta: 0.75                                                   
@@ -50,12 +49,13 @@ li {
         google.visualization.events.addListener(chart, 'select', selectHandler)
         function selectHandler()
         {
+        var localization = (data.getValue(chart.getSelection()[0].row, 0));
+        var url = "{{ url }}";
+        url = url.concat(localization);      
         try{   
-            alert(data.getValue(chart.getSelection()[0].row, 0));
+            window.location= url;
         }
-        catch(err){
-
-        }
+        catch(err){}
         }
       }  
      // Set a callback to run when the Google Visualization API is loaded.
@@ -68,7 +68,9 @@ li {
 {% block content %}
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
 <div class="container">
-<h1>Here is your image.</h1>
+<h1>Here are your localizations.</h1>
+<h3>Instructions:</h3>
+<p>Scroll in and out to zoom in and out. Right click to reset. Click on a classifier to see the segmented image of that classifier</p>
 <div id="chart_div"></div>
 </div>
 {% endblock %}

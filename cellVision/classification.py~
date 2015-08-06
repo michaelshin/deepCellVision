@@ -8,6 +8,7 @@ if '/home/michael/psinet/lib_python' not in sys.path:
 import modelEvalFunctions
 import numpy as np
 import gnumpy as gnp
+
 from image_handler import save
 import matplotlib
 matplotlib.use('Agg')
@@ -17,7 +18,7 @@ import resource
 import mahotas as mh
 
 def getImageData(inputImagePath, frames, channels):
-    # need to rewrite for the general case
+     # need to rewrite for the general case
     # set up image data, extract from tiff format.
     # extract multiple channels (8 page tiff -> 4 images, with green and red channels
     if '/home/ccbr_okraus/cell_segmentation/Segmentation_library/' not in sys.path:
@@ -54,6 +55,25 @@ def normalize_by_constant_values(inputData,means,stds):
             inputData[:,channel,:,:] = (inputData[:,channel,:,:] - means[channel]) / stds[channel]
     return inputData
 
+#function for segmentation for whole image
+#need to adjust
+def getJacobian(nn_input,curImages_input):
+    bfs =[i for i in nn_input.cfg.bfs()]
+    bfs.reverse()
+    ## already computed
+    #curImages = normalize_by_constant_values(curImages_input,norm_vals['means'],norm_vals['stdevs'])
+    gnp.free_reuse_cache()
+    nn_input.ForwardProp({'X0':gnp.garray(curImages_input)})
+    
+    Z_new = nn_input._layers['MIL_pool'].Z.copy()
+
+    _,delta = nn_input._layers['MIL_pool']._ComputeParamGradient(Z_new * nn_input._layers['MIL_pool'].A.reshape(4,17,1,1))
+    for l in bfs[3:-1]:
+        gnp.free_reuse_cache()
+        delta = nn_input._layers[l].BackProp(gnp.relu(delta))
+    out = delta.as_numpy_array()
+    return out
+
 #function for segmentation per class
 
 def getJacobian_per_class(nn_input, loc):
@@ -75,7 +95,7 @@ def _classify(path, name, frames, channels, target, choices):
     #whole images take up a lot of memory so we need to coordinate this. 
     # if you're not using the notebook or a script make sure to shutdown or restart the notebook
     # you can use nvidia-smi in terminal to see what process are running on the GPU
-    gnp._useGPUid = 1
+    gnp._useGPUid = 0
     #protein localization categories
     localizationTerms=['ACTIN', 'BUDNECK', 'BUDTIP', 'CELLPERIPHERY', 'CYTOPLASM',
        'ENDOSOME', 'ER', 'GOLGI', 'MITOCHONDRIA', 'NUCLEARPERIPHERY',
@@ -85,7 +105,7 @@ def _classify(path, name, frames, channels, target, choices):
     #normalization values (don't need to change)
     norm_vals = np.load('/home/morphology/mpg4/OrenKraus/Data_Sets/Yeast_Protein_Localization/Yolanda_Chong/overal_mean_std_for_single_cell_crops_based_on_Huh.npz')
 
-    #may change t5o better model (constatly training bgnumpy.track_memory_usage=Trueetter networks)
+    #may change to better model (constatly training bgnumpy.track_memory_usage=Trueetter networks)
     model_path = '/home/okraus/mil_models_backup/mil_models/Yeast_Protein_Localization/Yeast_NAND_a_10_scratch_Dropout_v5_MAP_early_stopping_best_model.npz'
 
     #load model and set evaluation type (MIL convolves across whole images)
@@ -121,7 +141,7 @@ def _classify(path, name, frames, channels, target, choices):
         im2show = np.int8(np.log(1+jacobian_per_class)>1+np.int8(np.log(1+jacobian_per_class)>.5))>0
         im2show = mh.dilate(mh.dilate(mh.dilate(mh.erode(mh.erode(mh.erode(im2show>0))))))
         plt.imshow(im2show)
-        loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+str(i))
+        loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+"_"+localizationTerms[i])
         save(loc)
     del nn
     del model

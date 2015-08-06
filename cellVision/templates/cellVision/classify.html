@@ -13,6 +13,12 @@ li {
     font-weight: normal;
 }
 </style>
+<script type="text/javascript">
+    function setUpSample(){
+    // fill out form    
+    alert('hello');
+    };
+</script>
 {% endblock css %}
 
 {% block page_title %}Deep Cell Vision - Classify{% endblock %}
@@ -22,6 +28,10 @@ li {
 
 <div class="container">
   <h1>CLASSIFY YEAST CELLS</h1>
+<a href="sample" onclick="setUpSample();">Download a sample image</a>
 </div>
+
+
+
 {% endblock %}
 

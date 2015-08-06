@@ -79,8 +79,7 @@ def _segment(cell):
 
 def show_segment(path, name):
     from PIL import Image
-    img = Image.open(path)
-    img.seek(9)
+    img = Image.open(path).convert('L')
     arr = np.asarray(img, np.uint8)
     arr = _segment(arr)
     plt.imshow(arr)
@@ -89,8 +88,4 @@ def show_segment(path, name):
     np.save(loc, arr) #save the array to give as a raw file
     return
 
-def seg_save(arr, name):
-    for i in range(17):
-        plt.imshow(arr[0,i,1])
-        loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+str(i))
-        save(loc)
+    

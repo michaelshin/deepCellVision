@@ -1,0 +1,36 @@
+{% extends "cellVision.html" %}
+
+{% block css %}
+{{block.super}}
+<style>
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+li {
+    list-style-type: none;
+    font-weight: normal;
+}
+</style>
+<script type="text/javascript">
+    function setUpSample(){
+    alert('hello');
+    };
+</script>
+{% endblock css %}
+
+{% block page_title %}Deep Cell Vision - Classify{% endblock %}
+{% block page_class %}classify{% endblock %}
+{% block content %}
+<!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
+
+<div class="container">
+  <h1>CLASSIFY YEAST CELLS</h1>
+<a href="sample" onclick="setUpSample();">Download a sample image</a>
+</div>
+
+
+
+{% endblock %}
+
