@@ -14,8 +14,54 @@ li {
 }
 </style>
 <script type="text/javascript">
-    function setUpSample(){
-    alert('hello');
+    function toggle(source) {
+      var checkboxes = document.getElementsByName('options');
+      for(var i=0, n=checkboxes.length;i<n;i++) {
+        checkboxes[i].checked = source.checked;
+      }
+    };
+    
+  
+    function setUpSample1(){
+    // fill out form    
+    var inputs = document.getElementsByTagName('input');
+
+    for(var i = 0; i < inputs.length; i++) {
+        if(i == 10 || i == 8 || i == 11 || i == 13 || i == 9) {
+          inputs[i].checked = true;
+         }
+    }
+      document.getElementById("id_frames").setAttribute("value", 4);
+      document.getElementById("id_channels").setAttribute("value", 2);
+      document.getElementById("id_target").setAttribute("value", 1);
+    };
+
+    function setUpSample2(){
+    // fill out form    
+    var inputs = document.getElementsByTagName('input');
+
+    for(var i = 0; i < inputs.length; i++) {
+        if(i == 7 || i == 8 || i == 0 || i == 13 || i == 12) {
+          inputs[i].checked = true;
+         }
+    }
+      document.getElementById("id_frames").setAttribute("value", 4);
+      document.getElementById("id_channels").setAttribute("value", 2);
+      document.getElementById("id_target").setAttribute("value", 1);
+    };
+
+    function setUpSample3(){
+    // fill out form    
+    var inputs = document.getElementsByTagName('input');
+
+    for(var i = 0; i < inputs.length; i++) {
+        if(i == 5 || i == 4 || i == 12 || i == 13 || i == 14) {
+          inputs[i].checked = true;
+         }
+    }
+      document.getElementById("id_frames").setAttribute("value", 4);
+      document.getElementById("id_channels").setAttribute("value", 2);
+      document.getElementById("id_target").setAttribute("value", 1);
     };
 </script>
 {% endblock css %}
@@ -27,7 +73,10 @@ li {
 
 <div class="container">
   <h1>CLASSIFY YEAST CELLS</h1>
-<a href="sample" onclick="setUpSample();">Download a sample image</a>
+<p><a href="sample/1" onclick="setUpSample1();">Download sample image 1</a></p>
+<p><a href="sample/2" onclick="setUpSample2();">Download sample image 2</a></p>
+<p><a href="sample/3" onclick="setUpSample3();">Download sample image 3</a></p>
+
 </div>
 
 

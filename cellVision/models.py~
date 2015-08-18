@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 import os
 import time
 import hashlib
@@ -39,8 +40,14 @@ def update_filename(instance, filename):
 
 class CellImage(models.Model):
     image = models.ImageField(upload_to = update_filename)
-    frames = models.IntegerField(default=0)
-    channels = models.IntegerField(default=0)
+    frames = models.IntegerField(default=0, null = True)
+    channels = models.IntegerField(default=0, null = True)
     target = models.IntegerField(default=0)
     activations = ListField(default = [])
     name = models.CharField(max_length=15, default= '')
+    last_accessed = timezone.now()
+    
+    def __unicode__(self):
+        return self.name
+
+ 

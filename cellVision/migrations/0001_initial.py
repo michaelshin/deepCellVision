@@ -16,10 +16,11 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('image', models.ImageField(upload_to=cellVision.models.update_filename)),
-                ('frames', models.IntegerField(default=0)),
-                ('channels', models.IntegerField(default=0)),
+                ('frames', models.IntegerField(default=0, null=True)),
+                ('channels', models.IntegerField(default=0, null=True)),
                 ('target', models.IntegerField(default=0)),
                 ('activations', cellVision.models.ListField(default=[])),
+                ('name', models.CharField(default=b'', max_length=15)),
             ],
         ),
     ]

@@ -48,7 +48,7 @@ def save(path, ext='png', close=True, verbose=False):
         print("Saving figure to '%s'..." % savepath),
 
     # Actually save the figure
-    plt.savefig(savepath)
+    plt.savefig(savepath, bbox_inches='tight', pad_inches = 0)
     
     # Close it
     if close:

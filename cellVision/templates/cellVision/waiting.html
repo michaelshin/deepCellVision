@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block css %}
+{{block.super}}
+<style>
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+li {
+    list-style-type: none;
+    font-weight: normal;
+}
+</style>
+
+{% endblock css %}
+
+{% block page_title %}Deep Cell Vision - Classify{% endblock %}
+{% block page_class %}classify{% endblock %}
+{% block content %}
+<!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
+
+<div class="container">
+  <h1>Check your email to see if the classification is complete. Come back here once it's done.</h1>
+
+</div>
+
+<meta http-equiv="refresh" content="12" >
+
+{% endblock %}
+

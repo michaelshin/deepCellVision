@@ -67,10 +67,7 @@
             <li>
               <a href = "{% url 'cellVision:classify' %}">Classify</a>
             </li>
-            <li>
-              <a href = "{% url 'cellVision:segment' %}">Segment</a>
-            </li>
-          </ul>
+         </ul>
           <ul class = "nav navbar-nav navbar-right">
             <li>
               <a href = "{% url 'contact_me:contact' %}">Contact</a>
@@ -101,16 +98,13 @@
             <li>
               <a href = "{% url 'cellVision:classify' %}">Classify</a>
             </li>
-            <li>
-              <a href = "{% url 'cellVision:segment' %}">Segment</a>
-            </li>
           </ul>
           <ul class = "nav navbar-nav navbar-right">
             <li>
               <a href = "{% url 'contact_me:contact' %}">Contact</a>
             </li>
             <li>
-              <a href = "http://tdccbr.med.utoronto.ca">UofT CCBR</a>
+              <a href = "http://tdccbr.med.utoronto.ca/">UofT CCBR</a>
             </li>
           </ul>
         </nav>    
@@ -133,7 +127,7 @@
         {{ field.label_tag }}
         {{ field.help_text }}
         {% if field.label == "Options" %}
-	<p><input onClick="toggle(this)" type="checkbox"  /> Select All</p>
+	<p><input id= "select_all" onClick="toggle(this)" type="checkbox"  /> Select All</p>
 	{% endif %}
         <p>{{ field }}</p>
         {{ field.errors }}

@@ -3,12 +3,15 @@ from django.http  import HttpResponse, HttpResponseRedirect, Http404
 from django.core.urlresolvers import reverse
 from django.core.files import File 
 from django.conf import settings
+from django.utils import timezone
+
 
 from .forms import CellVisionForm
 import image_handler
 from .models import CellImage
 import json
-from . import classification
+from . import tasks
+from flex_read_channels_frames import get_flex_data
 # Create your views here.
 
 def classify(request):
@@ -16,67 +19,46 @@ def classify(request):
         form = CellVisionForm(request.POST, request.FILES)
         if form.is_valid():
             upload = CellImage(image = request.FILES['image'], channels = form.cleaned_data['channels'], frames = form.cleaned_data['frames'], target = form.cleaned_data['target'])
-            upload.save()
+            upload.save()            
             path = upload.image.path #absolute path of image
             name = upload.image.name #name of the image
             url = upload.image.url
-            choices = form.cleaned_data['options'] #choices in list form
-            areas = classification._classify(path, name, upload.frames, upload.channels, upload.target, choices)
-            f = [['Class', 'Area']]
-            for choice in choices:
-                f.append([str(choice), areas[choice]])
-            upload.activations = f
+            choices = form.cleaned_data['options'] #choices in list form       
+            try:
+                meta = get_flex_data(path)
+                upload.channels = meta[2]
+                upload.frames = meta[0]
+            except TypeError: 
+                pass
             upload.name = name.split('.')[0]
-            upload.save()
+            upload.email = form.cleaned_data['email']
+            upload.save()            
+            tasks._classify.delay(path, name, upload.frames, upload.channels, upload.target, choices, upload)
             return HttpResponseRedirect(reverse("cellVision:results", args=(upload.name,)))
     else:
         form = CellVisionForm()
 	context_data = {'form': form}
     return render(request, 'cellVision/classify.html', {'form': form})
 
-def segment(request):
-    if request.method == 'POST':
-        form = CellVisionForm(request.POST, request.FILES)
-        if form.is_valid():
-            upload = CellImage(image = request.FILES['image'])
-            upload.save()
-            path = upload.image.path #absolute path of image
-            name = upload.image.name #name of the image
-            image_handler.show_segment(path, name)
-            choices = form.cleaned_data['options'] #choices in list form
-            return render(request, 'cellVision/segment_result.html', {'media_url': settings.MEDIA_URL, 'file_name': name.split('.')[0]})
-    else:
-        form = CellVisionForm()
-    return render(request, "cellVision/segment.html", {'form': form})
-
 def download(request, file_name):
-    file_location = str(settings.MEDIA_ROOT + "/segment/" + file_name)
-    array = File(open(file_location))
-    from mimetypes import guess_type
-    mime_type, encoding = guess_type(file_name)
-    response = HttpResponse(array, content_type=mime_type)
-    response['Content-Disposition'] = 'attachment; filename="%s"' %file_name
+    file_location = str(settings.MEDIA_ROOT + "/classes/" + file_name +".xlsx")
+    excel = File(open(file_location))
+    response = HttpResponse(excel, content_type='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+    response['Content-Disposition'] = 'attachment; filename=' + file_name +'.xlsx'
     return response
 
 def results(request, file_name):
     p = get_object_or_404(CellImage, name=file_name)
-    return render(request, "cellVision/classify_result.html", {'activations': json.dumps(p.activations), 'url': str(reverse("cellVision:results", args=(p.name,))) })
+    p.last_accessed = timezone.now()
+    p.save()
+    if p.activations == []:
+        return(render(request, "cellVision/waiting.html"))
+    else:
+        return render(request, "cellVision/classify_result.html", {'activations': json.dumps(p.activations), 'url': settings.MEDIA_URL + 'classes/' + p.image.name.split('.')[0], 'image': settings.MEDIA_URL + 'classes/' + p.image.name.split('.')[0]+"_FULL2", "name": p.name })
 
-def segment_images(request, file_name, localization):
-    p = get_object_or_404(CellImage, name=file_name)
-    for i in range(len(p.activations)):
-        if localization in p.activations[i]:
-            break
-        if i+1 == len(p.activations):
-            raise Http404
-    url = settings.MEDIA_URL + '/classes/' + p.name+"_"+localization
-    return render(request, "cellVision/classify_segment.html", {"localization": localization, "url": url})
-
-def sample(request):
-    file_location = str(settings.MEDIA_ROOT + "/sample/sample.flex" )
+def sample(request, num):
+    file_location = str(settings.MEDIA_ROOT + "/sample/sample_" + num+ ".flex" )
     array = File(open(file_location))
-    from mimetypes import guess_type
-    mime_type, encoding = guess_type("sample.flex")
-    response = HttpResponse(array, content_type=mime_type)
-    response['Content-Disposition'] = 'attachment; filename=sample.flex'
+    response = HttpResponse(array, content_type='application/force-download')
+    response['Content-Disposition'] = 'attachment; filename=sample_' +num+'.flex'
     return response

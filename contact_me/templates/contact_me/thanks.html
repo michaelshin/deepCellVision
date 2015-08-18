@@ -17,7 +17,11 @@ body {
 <!-- This code is taken from http://getbootstrap.com/examples/jumbotron/ -->
 
 <div class="container">
-  <h2>Your message was successfully sent. Thanks for your submission. We'll get back to you as soon as possible.</h2>
-    <p><a class="btn btn-default" href="{% url 'base:home' %}" role="button">Back to home »</a></p>
+  <h3>Thank you for your message. We'll get back to you as soon as possible.</h3>
 </div>
+    
+<div class = "container">
+<p><a class="btn btn-default" href="{% url 'base:home' %}" role="button">Back to home »</a></p>
+</div>
+
 {% endblock %}

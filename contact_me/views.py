@@ -14,7 +14,7 @@ def contact_page(request):
             message = form.cleaned_data['message']
             sender = form.cleaned_data['sender']
             cc_myself = form.cleaned_data['cc_myself']
-            recipients = ['g5437420@trbvm.com']
+            recipients = ['deepcellVision@gmail.com']
             message = "From " + name + ": \n" + message
             if cc_myself:
                 recipients.append(sender)
