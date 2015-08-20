@@ -7,7 +7,8 @@ import os
 import logging
 import djcelery
 djcelery.setup_loader()
-BROKER_URL = 'django://'
+#BROKER_URL = 'django://'
+BROKER_URL = 'amqp://myuser:mypassword@localhost:5672/myvhost'
 # Normally you should not import ANYTHING from Django directly
 # into your settings, but ImproperlyConfigured is an exception.
 from django.core.exceptions import ImproperlyConfigured

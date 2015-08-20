@@ -8,4 +8,4 @@ class CellVisionForm(forms.Form):
     frames = forms.IntegerField(initial = 1,required=False, error_messages={'invalid': 'Please enter a valid number'}, help_text = "Enter the number of frames your image has", min_value = 1)
     channels = forms.IntegerField(initial = 1, required=False, error_messages={'invalid': 'Please enter a valid number'}, help_text = "Enter the number of channels your image has", min_value = 1)
     target = forms.IntegerField(initial = 1, error_messages={'invalid': 'Please enter a valid number'}, help_text = "Enter the targeted frames", min_value = 1, max_value = frames)
-    email = forms.EmailField(error_messages={'required': 'Please enter your email', 'invalid': 'Please enter a valid email'}, help_text = "Enter an email to get a notification when your image is done")
+    email = forms.EmailField(error_messages={'invalid': 'Please enter a valid email'}, help_text = "Enter an email to get a notification when your image is done", required = False)

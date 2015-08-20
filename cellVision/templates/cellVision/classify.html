@@ -30,10 +30,13 @@ li {
         if(i == 13 || i == 11 || i == 14 || i == 16 || i == 12) {
           inputs[i].checked = true;
          }
+        else{
+            inputs[i].checked = false;
+        }
     }
       document.getElementById("id_frames").setAttribute("value", 4);
       document.getElementById("id_channels").setAttribute("value", 2);
-      document.getElementById("id_target").setAttribute("value", 1);
+      document.getElementById("id_target").setAttribute("value", 2);
     };
 
     function setUpSample2(){
@@ -44,6 +47,9 @@ li {
         if(i == 10 || i == 11 || i == 3 || i == 16 || i == 15) {
           inputs[i].checked = true;
          }
+        else{
+            inputs[i].checked = false;
+        }
     }
       document.getElementById("id_frames").setAttribute("value", 4);
       document.getElementById("id_channels").setAttribute("value", 2);
@@ -58,6 +64,9 @@ li {
         if(i == 8 || i == 7 || i == 15 || i == 16 || i == 17) {
           inputs[i].checked = true;
          }
+        else{
+            inputs[i].checked = false;
+        }
     }
       document.getElementById("id_frames").setAttribute("value", 4);
       document.getElementById("id_channels").setAttribute("value", 2);

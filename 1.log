@@ -1,0 +1,4 @@
+[2015-08-18 16:30:48,560: WARNING/MainProcess] /home/michael/anaconda/lib/python2.7/site-packages/celery/fixups/django.py:265: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2015-08-18 16:30:48,560: WARNING/MainProcess] 1@okraus-Precision-WorkStation-T7500 ready.

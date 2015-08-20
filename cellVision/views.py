@@ -5,13 +5,13 @@ from django.core.files import File
 from django.conf import settings
 from django.utils import timezone
 
-
 from .forms import CellVisionForm
 import image_handler
 from .models import CellImage
 import json
+
 from . import tasks
-from flex_read_channels_frames import get_flex_data
+
 # Create your views here.
 
 def classify(request):
@@ -25,7 +25,7 @@ def classify(request):
             url = upload.image.url
             choices = form.cleaned_data['options'] #choices in list form       
             try:
-                meta = get_flex_data(path)
+                meta = image_handler.get_flex_data(path)
                 upload.channels = meta[2]
                 upload.frames = meta[0]
             except TypeError: 
@@ -51,7 +51,9 @@ def results(request, file_name):
     p = get_object_or_404(CellImage, name=file_name)
     p.last_accessed = timezone.now()
     p.save()
-    if p.activations == []:
+    if p.activations == [] and p.email == '':
+        return(render(request, "cellVision/waiting1.html"))
+    elif p.activations == []:
         return(render(request, "cellVision/waiting.html"))
     else:
         return render(request, "cellVision/classify_result.html", {'activations': json.dumps(p.activations), 'url': settings.MEDIA_URL + 'classes/' + p.image.name.split('.')[0], 'image': settings.MEDIA_URL + 'classes/' + p.image.name.split('.')[0]+"_FULL2", "name": p.name })

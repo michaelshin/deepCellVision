@@ -1,0 +1,2255 @@
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 14:11:19 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /home/michael/deepCellVision
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2480490
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2480490 pid: 6371 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6371)
+spawned uWSGI worker 1 (pid: 6377, cores: 1)
+spawned uWSGI worker 2 (pid: 6378, cores: 1)
+spawned uWSGI worker 3 (pid: 6379, cores: 1)
+spawned uWSGI worker 4 (pid: 6380, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 14:15:14 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xbb3230
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xbb3230 pid: 6470 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6470)
+spawned uWSGI worker 1 (pid: 6475, cores: 1)
+spawned uWSGI worker 2 (pid: 6476, cores: 1)
+spawned uWSGI worker 3 (pid: 6477, cores: 1)
+spawned uWSGI worker 4 (pid: 6478, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 14:15:41 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1f4b230
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f4b230 pid: 6488 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6488)
+spawned uWSGI worker 1 (pid: 6493, cores: 1)
+spawned uWSGI worker 2 (pid: 6494, cores: 1)
+spawned uWSGI worker 3 (pid: 6495, cores: 1)
+spawned uWSGI worker 4 (pid: 6496, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 14:29:01 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x108a240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x108a240 pid: 6777 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6777)
+spawned uWSGI worker 1 (pid: 6786, cores: 1)
+spawned uWSGI worker 2 (pid: 6787, cores: 1)
+spawned uWSGI worker 3 (pid: 6788, cores: 1)
+spawned uWSGI worker 4 (pid: 6789, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 14:44:12 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2503240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/michael/deepCellVision/deepCellVision/wsgi.py", line 59, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/apps.py", line 15, in ready
+    dt_settings.patch_all()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 232, in patch_all
+    patch_root_urlconf()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 220, in patch_root_urlconf
+    reverse('djdt:render_panel')
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 550, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 352, in app_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 285, in _populate
+    for pattern in reversed(self.url_patterns):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/deepCellVision/urls.py", line 14, in <module>
+    url(r'^cellVision/', include('cellVision.urls', namespace = 'cellVision')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/cellVision/urls.py", line 3, in <module>
+    from . import views
+  File "/home/michael/deepCellVision/cellVision/views.py", line 13, in <module>
+    from . import tasks
+  File "/home/michael/deepCellVision/cellVision/tasks.py", line 1, in <module>
+    from celery import task
+  File "/home/michael/deepCellVision/cellVision/celery.py", line 1, in <module>
+    from deepCellVision.settings import celery
+ImportError: cannot import name celery
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8715)
+spawned uWSGI worker 1 (pid: 8725, cores: 1)
+spawned uWSGI worker 2 (pid: 8726, cores: 1)
+spawned uWSGI worker 3 (pid: 8727, cores: 1)
+spawned uWSGI worker 4 (pid: 8728, cores: 1)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:15:51 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2636240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2636240 pid: 13197 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13197)
+spawned uWSGI worker 1 (pid: 13204, cores: 1)
+spawned uWSGI worker 2 (pid: 13205, cores: 1)
+spawned uWSGI worker 3 (pid: 13206, cores: 1)
+spawned uWSGI worker 4 (pid: 13207, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:20:12 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x14e5240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x14e5240 pid: 13369 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13369)
+spawned uWSGI worker 1 (pid: 13374, cores: 1)
+spawned uWSGI worker 2 (pid: 13375, cores: 1)
+spawned uWSGI worker 3 (pid: 13376, cores: 1)
+spawned uWSGI worker 4 (pid: 13377, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:21:05 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x13bf240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x13bf240 pid: 13400 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13400)
+spawned uWSGI worker 1 (pid: 13405, cores: 1)
+spawned uWSGI worker 2 (pid: 13406, cores: 1)
+spawned uWSGI worker 3 (pid: 13407, cores: 1)
+spawned uWSGI worker 4 (pid: 13408, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:45:05 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xc68240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xc68240 pid: 14279 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14279)
+spawned uWSGI worker 1 (pid: 14288, cores: 1)
+spawned uWSGI worker 2 (pid: 14289, cores: 1)
+spawned uWSGI worker 3 (pid: 14290, cores: 1)
+spawned uWSGI worker 4 (pid: 14291, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:46:13 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2357240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2357240 pid: 14352 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14352)
+spawned uWSGI worker 1 (pid: 14363, cores: 1)
+spawned uWSGI worker 2 (pid: 14364, cores: 1)
+spawned uWSGI worker 3 (pid: 14365, cores: 1)
+spawned uWSGI worker 4 (pid: 14366, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:46:59 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1eda240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1eda240 pid: 14407 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14407)
+spawned uWSGI worker 1 (pid: 14416, cores: 1)
+spawned uWSGI worker 2 (pid: 14417, cores: 1)
+spawned uWSGI worker 3 (pid: 14418, cores: 1)
+spawned uWSGI worker 4 (pid: 14419, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:48:58 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2535240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x2535240 pid: 14480 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14480)
+spawned uWSGI worker 1 (pid: 14489, cores: 1)
+spawned uWSGI worker 2 (pid: 14490, cores: 1)
+spawned uWSGI worker 3 (pid: 14491, cores: 1)
+spawned uWSGI worker 4 (pid: 14492, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 16:49:23 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x233b240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x233b240 pid: 14513 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14513)
+spawned uWSGI worker 1 (pid: 14522, cores: 1)
+spawned uWSGI worker 2 (pid: 14523, cores: 1)
+spawned uWSGI worker 3 (pid: 14524, cores: 1)
+spawned uWSGI worker 4 (pid: 14525, cores: 1)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+IOError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 17:02:19 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xb2b240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/michael/deepCellVision/deepCellVision/wsgi.py", line 59, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/apps.py", line 15, in ready
+    dt_settings.patch_all()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 232, in patch_all
+    patch_root_urlconf()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 220, in patch_root_urlconf
+    reverse('djdt:render_panel')
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 550, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 352, in app_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 285, in _populate
+    for pattern in reversed(self.url_patterns):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/deepCellVision/urls.py", line 14, in <module>
+    url(r'^cellVision/', include('cellVision.urls', namespace = 'cellVision')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/cellVision/urls.py", line 3, in <module>
+    from . import views
+  File "/home/michael/deepCellVision/cellVision/views.py", line 12, in <module>
+    from . import tasks
+  File "/home/michael/deepCellVision/cellVision/tasks.py", line 9, in <module>
+    import modelEvalFunctions
+ImportError: No module named modelEvalFunctions
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15016)
+spawned uWSGI worker 1 (pid: 15403, cores: 1)
+spawned uWSGI worker 2 (pid: 15404, cores: 1)
+[uwsgi-body-read] Error reading 8192 bytes. Content-Length: 10780215 consumed: 0 left: 10780215 message: Client closed connection
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /cellVision/classify/ (ip 192.168.0.12) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /JNAP/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+spawned uWSGI worker 3 (pid: 15405, cores: 1)
+spawned uWSGI worker 4 (pid: 15406, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 17:08:53 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x17ee240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/michael/deepCellVision/deepCellVision/wsgi.py", line 59, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/apps.py", line 15, in ready
+    dt_settings.patch_all()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 232, in patch_all
+    patch_root_urlconf()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 220, in patch_root_urlconf
+    reverse('djdt:render_panel')
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 550, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 352, in app_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 285, in _populate
+    for pattern in reversed(self.url_patterns):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/deepCellVision/urls.py", line 14, in <module>
+    url(r'^cellVision/', include('cellVision.urls', namespace = 'cellVision')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/cellVision/urls.py", line 3, in <module>
+    from . import views
+  File "/home/michael/deepCellVision/cellVision/views.py", line 12, in <module>
+    from . import tasks
+  File "/home/michael/deepCellVision/cellVision/tasks.py", line 9, in <module>
+    import modelEvalFunctions
+ImportError: No module named modelEvalFunctions
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15432)
+spawned uWSGI worker 1 (pid: 15439, cores: 1)
+spawned uWSGI worker 2 (pid: 15440, cores: 1)
+spawned uWSGI worker 3 (pid: 15441, cores: 1)
+spawned uWSGI worker 4 (pid: 15442, cores: 1)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Tue Aug 18 17:13:46 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xcd7240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+Traceback (most recent call last):
+  File "/home/michael/deepCellVision/deepCellVision/wsgi.py", line 59, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 14, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 115, in populate
+    app_config.ready()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/apps.py", line 15, in ready
+    dt_settings.patch_all()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 232, in patch_all
+    patch_root_urlconf()
+  File "/usr/local/lib/python2.7/dist-packages/debug_toolbar/settings.py", line 220, in patch_root_urlconf
+    reverse('djdt:render_panel')
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 550, in reverse
+    app_list = resolver.app_dict[ns]
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 352, in app_dict
+    self._populate()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 285, in _populate
+    for pattern in reversed(self.url_patterns):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/deepCellVision/urls.py", line 14, in <module>
+    url(r'^cellVision/', include('cellVision.urls', namespace = 'cellVision')),
+  File "/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/michael/deepCellVision/cellVision/urls.py", line 3, in <module>
+    from . import views
+  File "/home/michael/deepCellVision/cellVision/views.py", line 12, in <module>
+    from . import tasks
+  File "/home/michael/deepCellVision/cellVision/tasks.py", line 9, in <module>
+    import modelEvalFunctions
+ImportError: No module named modelEvalFunctions
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16988)
+spawned uWSGI worker 1 (pid: 16993, cores: 1)
+spawned uWSGI worker 2 (pid: 16994, cores: 1)
+spawned uWSGI worker 3 (pid: 16995, cores: 1)
+spawned uWSGI worker 4 (pid: 16996, cores: 1)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /HNAP1/ (ip 192.168.3.195) !!!
+uwsgi_response_write_headers_do(): Broken pipe [core/writer.c line 216]
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Thu Aug 20 13:04:31 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xd4cbe0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 22 seconds on interpreter 0xd4cbe0 pid: 2001 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2001)
+spawned uWSGI worker 1 (pid: 2768, cores: 1)
+spawned uWSGI worker 2 (pid: 2769, cores: 1)
+spawned uWSGI worker 3 (pid: 2770, cores: 1)
+spawned uWSGI worker 4 (pid: 2771, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Thu Aug 20 13:07:24 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1121be0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1121be0 pid: 4949 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4949)
+spawned uWSGI worker 1 (pid: 4954, cores: 1)
+spawned uWSGI worker 2 (pid: 4955, cores: 1)
+spawned uWSGI worker 3 (pid: 4956, cores: 1)
+spawned uWSGI worker 4 (pid: 4957, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Thu Aug 20 13:24:16 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2340be0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2340be0 pid: 5863 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5863)
+spawned uWSGI worker 1 (pid: 5868, cores: 1)
+spawned uWSGI worker 2 (pid: 5869, cores: 1)
+spawned uWSGI worker 3 (pid: 5870, cores: 1)
+spawned uWSGI worker 4 (pid: 5871, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Thu Aug 20 13:51:13 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x26aa240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x26aa240 pid: 7975 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7975)
+spawned uWSGI worker 1 (pid: 7984, cores: 1)
+spawned uWSGI worker 2 (pid: 7985, cores: 1)
+spawned uWSGI worker 3 (pid: 7986, cores: 1)
+spawned uWSGI worker 4 (pid: 7987, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Thu Aug 20 13:52:13 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x25d5240
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x25d5240 pid: 8063 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8063)
+spawned uWSGI worker 1 (pid: 8074, cores: 1)
+spawned uWSGI worker 2 (pid: 8075, cores: 1)
+spawned uWSGI worker 3 (pid: 8076, cores: 1)
+spawned uWSGI worker 4 (pid: 8077, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Thu Aug 20 14:09:52 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1a0c1f0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1a0c1f0 pid: 8698 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8698)
+spawned uWSGI worker 1 (pid: 8714, cores: 1)
+spawned uWSGI worker 2 (pid: 8715, cores: 1)
+spawned uWSGI worker 3 (pid: 8716, cores: 1)
+spawned uWSGI worker 4 (pid: 8717, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 1.9.17.1-debian (64bit) on [Thu Aug 20 14:10:24 2015] ***
+compiled with version: 4.8.2 on 23 March 2014 17:15:32
+os: Linux-3.13.0-49-generic #81-Ubuntu SMP Tue Mar 24 19:29:48 UTC 2015
+nodename: okraus-Precision-WorkStation-T7500
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /
+detected binary path: /usr/bin/uwsgi-core
+your processes number limit is 192695
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/michael/deepCellVision/run/thecellmap.sock fd 3
+Python version: 2.7.6 (default, Jun 22 2015, 18:01:27)  [GCC 4.8.2]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x21961f0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 404920 bytes (395 KB) for 4 cores
+*** Operational MODE: preforking ***
+added /home/michael/deepCellVision/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x21961f0 pid: 8752 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8752)
+spawned uWSGI worker 1 (pid: 8757, cores: 1)
+spawned uWSGI worker 2 (pid: 8758, cores: 1)
+spawned uWSGI worker 3 (pid: 8759, cores: 1)
+spawned uWSGI worker 4 (pid: 8760, cores: 1)

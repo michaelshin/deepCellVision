@@ -141,7 +141,23 @@ def show_segmentation_boundaries(input_image,seg_mask,frame_num,sizeX,sizeY):
     slice2show = [slice(0,sizeY),slice(0,sizeX)]
 
     plt.imshow(x[slice2show]/np.array([240.,240.,1]).reshape(1,1,3))
-    plt.imshow(border2overlay[slice2show],cmap_2_use,alpha=0.8),plt.axis('off')    
+    plt.imshow(border2overlay[slice2show],cmap_2_use,alpha=0.8),plt.axis('off')
+
+def overlay(input_image,seg_mask,frame_num,sizeX,sizeY):
+    import mahotas as mh
+    cmap = plt.get_cmap('gray')
+    seg_mask=seg_mask>0
+    cmap_2_use = truncate_colormap(cmap,0.9,1)
+    border2overlay = np.ma.masked_where(seg_mask ==0, seg_mask)
+
+    x =mh.as_rgb(input_image[frame_num][0,:,:],input_image[frame_num][1,:,:],np.zeros((sizeY,sizeX)))
+    x[:,:,1][x[:,:,1]>240]=240
+    x[:,:,0][x[:,:,0]>240]=240
+
+    slice2show = [slice(0,sizeY),slice(0,sizeX)]
+
+    plt.imshow(x[slice2show]/np.array([240.,240.,1]).reshape(1,1,3))
+    plt.imshow(border2overlay[slice2show],cmap_2_use,alpha=0.4),plt.axis('off')  
 
 @task
 def _classify(path, name, frames, channels, target, choices, CellObject):
@@ -210,10 +226,9 @@ def _classify(path, name, frames, channels, target, choices, CellObject):
     for i in range(len(localizationTerms)):
         if i in top5indices:
             area_lib[localizationTerms[i]] = area[i]
-            jacobian_per_class = getJacobian_per_class(nn,i,frames)[target-1,0]
-            im2show = np.int8(np.log(1+jacobian_per_class)>1+np.int8(np.log(1   +jacobian_per_class)>.5))>0
-            im2show = mh.dilate(mh.dilate(mh.dilate(mh.erode(mh.erode(mh.erode(im2show>0))))))
-            plt.imshow(im2show)
+            jacobian_per_class = getJacobian_per_class(nn,i,frames)
+            im2show = mahotas_clean_up_seg(jacobian_per_class, target-1)
+            overlay(curImages,im2show,target-1,sizeX, sizeY)
             loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+"_"+localizationTerms[i])
             save(loc)
             np.save(loc, im2show)
@@ -221,13 +236,13 @@ def _classify(path, name, frames, channels, target, choices, CellObject):
         if localizationTerms[i] not in choices:
             continue
         area_lib[localizationTerms[i]] = area[i]
-        jacobian_per_class = getJacobian_per_class(nn,i,frames)[target-1,0]
-        im2show = np.int8(np.log(1+jacobian_per_class)>1+np.int8(np.log(1+jacobian_per_class)>.5))>0
+        jacobian_per_class = getJacobian_per_class(nn,i,frames)[target-1]
+        im2show = np.int8(np.log(1+jacobian_per_class[0])>0.1+np.int8(np.log(1+jacobian_per_class[1])>1))>0
         im2show = mh.dilate(mh.dilate(mh.dilate(mh.erode(mh.erode(mh.erode(im2show>0))))))
-        plt.imshow(im2show)
+        overlay(curImages,im2show,target-1,sizeX, sizeY)
         loc = str(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0]+"_"+localizationTerms[i])
         save(loc)
-        np.save(loc, im2show) #save the array to give as a raw file
+        np.save(loc, im2show)
     del nn
     del model
     gnp.free_reuse_cache()
@@ -242,6 +257,7 @@ def _classify(path, name, frames, channels, target, choices, CellObject):
     for arr in f:
         ws.append(arr)
     wb.save(settings.MEDIA_ROOT + '/classes/' + name.split('.')[0] + '.xlsx')
-    send_mail('Deep Cell Vision', 'Your image has been classified. Go to http://deepcellvision.com/results/' +CellObject.name + ' to see your results' , 'deepCellVision@gmail.com',
+    if CellObject.email != '':
+        send_mail('Deep Cell Vision', 'Your image has been classified. Go to http://deepcellvision.com/results/' +CellObject.name + ' to see your results' , 'deepCellVision@gmail.com',
     [CellObject.email], fail_silently=False)
     return

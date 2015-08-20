@@ -9,11 +9,12 @@ from . import base
 # If you don't need to extend any settings from base.py, you do not need
 # to import base above
 INSTALLED_APPS = base.INSTALLED_APPS + ('django_nose',)
+DATABASE_ROOT = base.PROJECT_ROOT + '/db/development.sqlite3'
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db/development.sqlite3',
+        'NAME': DATABASE_ROOT,
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
@@ -37,7 +38,7 @@ ADMINS = (
 )
 MANAGERS = ADMINS
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 CACHES = {
     'default': {
@@ -64,13 +65,15 @@ ALLOWED_HOSTS = ['*']
 SECRET_KEY = '1ifmp#foi%cnty9by#+#n98l=)5qklvcj5-66$1m(^=ts%d$3o'
 
 # Uncomment these to activate and customize Celery:
-# CELERY_ALWAYS_EAGER = False  # required to activate celeryd
-# BROKER_HOST = 'localhost'
-# BROKER_PORT = 5672
-# BROKER_USER = 'django'
-# BROKER_PASSWORD = 'django'
-# BROKER_VHOST = 'django'
-# CELERY_RESULT_BACKEND = 'amqp'
+#CELERY_ALWAYS_EAGER = False  # required to activate celeryd
+#BROKER_HOST = 'localhost'
+#BROKER_PORT = 5672
+#BROKER_USER = 'django'
+#BROKER_PASSWORD = 'django'
+#BROKER_VHOST = 'django'
+#CELERY_RESULT_BACKEND = 'amqp'
+#CELERY_ACCEPT_CONTENT = ['json']
+#CELERY_RESULT_SERIALIZER = 'json'
 
 ## Log settings
 
